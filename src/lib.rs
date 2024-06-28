@@ -5,7 +5,7 @@ use futures::executor::block_on;
 
 pg_module_magic!();
 
-#[pg_extern]
+#[pg_extern(immutable, strict, parallel_safe)]
 fn evaluate_jdm(graph: JsonB, data: JsonB) -> JsonB {
     let decision_content: DecisionContent = serde_json::from_value(graph.0).unwrap();
     let engine = DecisionEngine::default();
