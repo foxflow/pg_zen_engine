@@ -8,7 +8,7 @@
 
 ---
 
-**Source Code**: <a href="https://github.com/supabase/pg_zen_engine" target="_blank">https://github.com/supabase/pg_zen_engine</a>
+**Source Code**: <a href="https://github.com/supabase/pg_zen_engine" target="_blank">https://github.com/foxflow/pg_zen_engine</a>
 
 ---
 
@@ -18,10 +18,7 @@
 
 
 ## API
-One SQL functions:
 - evaluate_jdm
-
-With the following signatures
 ```sql
 -- Validates a json *instance* against a *schema*
 evaluate_jdm(graph jsonb, data json) returns jsonb
