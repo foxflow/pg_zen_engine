@@ -20,6 +20,5 @@
 ## API
 - evaluate_jdm
 ```sql
--- Validates a json *instance* against a *schema*
 evaluate_jdm(graph jsonb, data json) returns jsonb
 ```
